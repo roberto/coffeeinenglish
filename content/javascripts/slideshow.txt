@@ -1,0 +1,13 @@
+---
+extension: js
+filter:    erb
+layout:    nil
+---
+ 
+$(document).ready(function() {
+  
+  $('#slideshow').cycle({
+  		fx: 'fade'
+  	});
+
+});

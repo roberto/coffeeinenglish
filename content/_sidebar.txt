@@ -1,0 +1,14 @@
+---
+filter:
+  - erb
+  - haml
+---
+
+.box
+  %h5
+    Participe!
+  Faça parte da
+  %a(title="Coffee in English no Orkut"){:href => "http://www.orkut.com.br/Main#Community?cmm=95075292"} nossa comunidade no Orkut
+  ,
+  %a(title="Coffee in English no Twitter"){:href => "http://twitter.com/coffeeinenglish"} acompanhe-nos no twitter
+  e compareça no próximo sábado!

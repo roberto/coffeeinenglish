@@ -1,0 +1,15 @@
+require 'compass'
+
+Compass.configuration do |config|
+  config.project_path = File.dirname(__FILE__)
+  config.sass_dir = File.join('content', 'css' )
+end
+
+Webby.site.sass_options.update(Compass.sass_engine_options)
+
+task :default => :build
+
+desc 'deploy the site to the webserver'
+task :deploy => [:build, 'deploy:rsync']
+
+# EOF

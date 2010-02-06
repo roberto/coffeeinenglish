@@ -1,0 +1,11 @@
+---
+filter:
+  - erb
+  - haml
+---
+
+%div#slideshow
+	%img{:src => "/images/pictures/0.jpg"}
+	<% 4.times do |i| -%>
+	%img{:src => "/images/pictures/<%= i + 1%>.jpg", :style => "display: none"}
+	<% end -%>
