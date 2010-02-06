@@ -7,6 +7,10 @@ end
 
 Webby.site.sass_options.update(Compass.sass_engine_options)
 
+SITE.host = "bopia"
+SITE.user = "deploy"
+SITE.remote_dir = "/data/rails/coffeeinenglish.com"
+
 task :default => :build
 
 desc 'deploy the site to the webserver'
