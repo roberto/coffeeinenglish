@@ -23,24 +23,26 @@ filter:    erb
 </head>
 <body class="three-col bp">
 
-<div id="container">
+  <div id="container">
 
-   <div id="header">
-     <h1>Coffee in English</h1>
-   </div>
+     <div id="header">
+       <h1>Coffee in English</h1>
+     </div>
 
-   <div id="content">
-      <%= @content %>
-   </div>
+     <div id="content">
+        <%= @content %>
+     </div>
 
-   <div id="sidebar">
-      <%= render :partial => 'sidebar', :guard => true %>
-   </div>
+     <div id="sidebar">
+        <%= render :partial => 'sidebar', :guard => true %>
+     </div>
 
-   <!-- <div id="footer">
-     <p>This website was created with <a href="http://webby.rubyforge.org">Webby</a></p>
-   </div> -->
+     <!-- <div id="footer">
+       <p>This website was created with <a href="http://webby.rubyforge.org">Webby</a></p>
+     </div> -->
 
-</div>
+  </div>
+
+  <%= render :partial => 'google_analytics', :guard => true %>
 </body>
 </html>

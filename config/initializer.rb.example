@@ -1,0 +1,6 @@
+SITE.host = ""
+SITE.user = ""
+SITE.remote_dir = ""
+
+GOOGLE_ANALYTICS_CODE = ""
+ADDTHIS_CODE = ""
